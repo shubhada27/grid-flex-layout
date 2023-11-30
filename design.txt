@@ -1,0 +1,295 @@
+1.manuscript
+<div class="grid-container">
+   <div class="grid-items">
+      ANC
+   </div>
+</div>
+//css manuscript
+.grid-container{
+display:grid;
+grid-template-columns: 1fr; 
+}
+.grid-container > *{
+background:#666;
+}
+2.manuscript flex
+<div class="flex-container">
+   <div class="flex-items one">
+      ANC
+   </div>
+</div>
+//css manuscript
+.flex-container{
+display:flex;
+}
+.flex-container > *{
+flex-basis: 100%;
+height:100vh;
+background:#555;
+}
+3. grid columns
+<div class="grid-container">
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+</div>
+//css gpp
+.grid-container{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr; 
+gap:20px;
+}
+.grid-container > *{
+background:#666;
+height:100vh;
+}
+4.flex columns
+<div class="flex-container">
+   <div class="flex-items one">
+      ANC
+   </div>
+   <div class="flex-items">
+      BHS
+   </div>
+   <div class="flex-items">
+      hDs
+   </div>
+</div>
+//css flex columns
+.flex-container{
+display:flex;
+gap:20px;
+}
+.flex-container > *{
+flex-basis: 100%;
+height:100vh;
+background:#555;
+}
+5.grid modular
+<div class="grid-container">
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+   <div class="grid-items">
+      ANC
+   </div>
+</div>
+//css 
+.grid-container{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr; 
+gap:20px;
+}
+.grid-container > *{
+background:#666;
+height:30vh;
+}
+6. flex modular 
+<div class="flex-container">
+   <div class="flex-items one">
+      ANC
+   </div>
+   <div class="flex-items">
+      BHS
+   </div>
+   <div class="flex-items">
+      hDs
+   </div>
+   <div class="flex-items">
+      ANC
+   </div>
+   <div class="flex-items">
+      BHS
+   </div>
+   <div class="flex-items">
+      hDs
+   </div>
+   <div class="flex-items">
+      ANC
+   </div>
+   <div class="flex-items">
+      BHS
+   </div>
+   <div class="flex-items">
+      hDs
+   </div>
+</div>
+//css
+.flex-container{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap; 
+}
+.flex-items{
+width:350px;
+height:200px;
+background:#eee;
+}
+7.grid hierarchy
+<div class="grid-container">
+   <div class="grid-items block-one">
+      BAC
+   </div>
+   <div class="grid-items block-two  se-rw ">
+      BAC
+   </div>
+   <div class="grid-items block-three se-rw">
+      BAC
+   </div>
+   <div class="grid-items block-four th-rw">
+      BAC
+   </div>
+   <div class="grid-items block-five th-rw">
+      BAC
+   </div>
+   <div class="grid-items block-six th-rw">
+      BAC
+   </div>
+   <div class="grid-items block-seven fo-rw">
+      BAC
+   </div>
+   <div class="grid-items block-eight fo-rw">
+      BAC
+   </div>
+   <div class="grid-items block-nine fo-rw">
+      BAC
+   </div>
+</div>
+//css
+.grid-container{
+display:grid;
+grid-template-columns:repeat(4 ,1fr);
+gap:20px;
+}
+.grid-items{
+background:#ccc;
+}
+.block-one
+{
+grid-column-start:1;
+grid-column-end:5;
+grid-row:1/6
+}
+.block-two{
+grid-column: 1/4;
+}
+.se-rw{
+grid-row:6/9;
+}
+.block-four,.block-seven{
+grid-column: 1/3;
+}
+.th-rw{
+grid-row:9/20;
+}
+.fo-rw{
+grid-row:20/30;
+}
+
+
+8.flex hierarchy 
+<div class="flex-container">
+   <div class="flex-items one">
+      ANC
+   </div>
+   <div class="flex-items">
+      BHS
+   </div>
+   <div class="flex-items">
+      hDs
+   </div>
+   <div class="flex-items">
+      ANC
+   </div>
+   <div class="flex-items">
+      BHS
+   </div>
+   <div class="flex-items">
+      hDs
+   </div>
+   <div class="flex-items">
+      ANC
+   </div>
+   <div class="flex-items">
+      BHS
+   </div>
+   <div class="flex-items">
+      hDs
+   </div>
+</div>
+//css 
+.flex-container{
+display:flex;
+flex-wrap:wrap;
+gap:20px 10px;
+}
+.flex-items:nth-child(1) {
+flex: 1 1 100%; 
+background:red;
+height:100px;
+}
+.flex-items:nth-child(2) {
+flex: 1 1 70%; 
+background:green;
+height:70px;
+}
+.flex-items:nth-child(3) {
+flex: 1 1 28%; 
+background:blue;
+}
+.flex-items:nth-child(4) {
+flex: 1 1 40%; 
+background:#cc5;
+height:250px;
+}
+.flex-items:nth-child(5) {
+flex: 1 1 30%; 
+background:#eee;
+}
+.flex-items:nth-child(6) {
+flex: 1 1 28%; 
+background:#888;
+}
+.flex-items:nth-child(7) {
+flex: 1 1 40%; 
+background:#aaa;
+height:250px;
+}
+.flex-items:nth-child(8) {
+flex: 1 1 30%; 
+background:#eee;
+height:250px;
+}
+.flex-items:nth-child(9) {
+flex: 1 1 28%; 
+background:#888;
+height:250px;
+}
